@@ -28,7 +28,7 @@ jobs:
         context: .
         file: ./Dockerfile
         push: true
-        tags: bishoyh/samtools:latest
+        tags: picotainers/samtools:latest
 
     - name: Image digest
       run: echo ${{ steps.docker_build.outputs.digest }}
