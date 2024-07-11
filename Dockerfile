@@ -64,6 +64,7 @@ COPY --from=builder /samtools/libgpg-error.so.0 /usr/lib/x86_64-linux-gnu/
 COPY --from=builder /samtools/libkeyutils.so.1 /usr/lib/x86_64-linux-gnu/
 COPY --from=builder /samtools/libffi.so.7 /usr/lib/x86_64-linux-gnu/
 COPY --from=builder /samtools/libcrypto.so.1.1 /usr/lib/x86_64-linux-gnu/
+COPY --from=builder /samtools/libssl.so.1.1 /usr/lib/x86_64-linux-gnu/
 
 
 
