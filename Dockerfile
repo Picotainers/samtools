@@ -63,6 +63,8 @@ COPY --from=builder /samtools/libtasn1.so.6 /usr/lib/x86_64-linux-gnu/
 COPY --from=builder /samtools/libgpg-error.so.0 /usr/lib/x86_64-linux-gnu/
 COPY --from=builder /samtools/libkeyutils.so.1 /usr/lib/x86_64-linux-gnu/
 COPY --from=builder /samtools/libffi.so.7 /usr/lib/x86_64-linux-gnu/
+COPY --from=builder /samtools/libcrypto.so.1.1 /usr/lib/x86_64-linux-gnu/
+
 
 
 # Set the entrypoint to the samtools binary
